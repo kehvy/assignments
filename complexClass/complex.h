@@ -30,7 +30,14 @@ public:
 	bool isReal();
 	bool isImaginary();
 
-//	addInto() and addReturnNew() yet to be defined and implemented
+	complex &addInto(const complex &another);
+	complex &addInto(double real, double imag);	//add in same instance
+
+	complex addReturnNew(const complex &another) const;
+	complex addReturnNew(double real, double imag) const;	//add in new instance
+
+	//operator overloading
+	complex operator+(complex);
 
 };
 
