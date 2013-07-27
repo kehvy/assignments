@@ -1,0 +1,1 @@
+getDayOfWeek.d: ../getDayOfWeek.cpp
